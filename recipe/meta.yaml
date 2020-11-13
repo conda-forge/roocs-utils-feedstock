@@ -13,7 +13,7 @@ source:
 build:
   #  noarch: python
   skip: True  # [win]
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
