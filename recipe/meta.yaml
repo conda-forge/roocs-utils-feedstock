@@ -27,6 +27,8 @@ requirements:
     - xarray >=0.15
     - dask >=2.6
     - cftime
+    - oyaml
+    - pyyaml
     - netCDF4 >=1.4
     - python-dateutil >=2.8.1
     - cf_xarray >=0.2.1
