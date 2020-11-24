@@ -1,6 +1,6 @@
 {% set name = "roocs-utils" %}
 {% set package_name = "roocs_utils" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: e44ca4c8c66c283aec96f36a2be810fa9f599438ee00dee0a94e4d6001721709
+  sha256: 29ace2e0e741bb3ff9aaf8deb5240f82fca0fa0b93e7809a3f3479973778611a
 
 build:
   #  noarch: python
-  skip: True  # [win]
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: true  # [win]
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A package containing common components for the roocs project'
+  summary: A package containing common components for the roocs project
   doc_url: https://roocs-utils.readthedocs.io/
   dev_url: https://github.com/roocs/roocs-utils/
 
