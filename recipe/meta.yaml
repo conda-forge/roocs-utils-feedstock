@@ -1,6 +1,6 @@
 {% set name = "roocs-utils" %}
 {% set package_name = "roocs_utils" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: 0ad44ec2f98145ad6df387d12114a6e4f47cc22ff1f0b1755d82f77b49990d35
+  sha256: 4f0c6993796276f7fb03ccc7f2149debcdd347541ab8d7c74d1d643f4f779232
 
 build:
   noarch: python
@@ -29,7 +29,6 @@ requirements:
     - netCDF4 >=1.4
     - python-dateutil >=2.8.1
     - cf_xarray >=0.2.1
-    - pandas
 
 test:
   imports:
