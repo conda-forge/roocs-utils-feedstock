@@ -1,6 +1,6 @@
 {% set name = "roocs-utils" %}
 {% set package_name = "roocs_utils" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: 4f0c6993796276f7fb03ccc7f2149debcdd347541ab8d7c74d1d643f4f779232
+  sha256: 41d11e3ba363864b5574756f3f21742c0d9b16835c097e8553d10d6309141936
 
 build:
   noarch: python
