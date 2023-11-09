@@ -33,6 +33,10 @@ requirements:
 test:
   imports:
     - roocs_utils
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/roocs/roocs-utils/
