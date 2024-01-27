@@ -1,6 +1,6 @@
 {% set name = "roocs-utils" %}
 {% set package_name = "roocs_utils" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: 0a8df496f18dfdaea1b3d234784e7d481c7163a7d3555dee7adeb5e1486ae97f
+  sha256: 5d34eeeef0b6ede1ca5545042acdb16f5897ad4062975a719ebd83317007503a
 
 build:
   noarch: python
@@ -22,13 +22,17 @@ requirements:
     - pytest-runner
   run:
     - python >=3.8
-    - numpy >=1.16
-    - xarray >=0.15
-    - dask >=2.6
-    - cftime
-    - netCDF4 >=1.4
-    - python-dateutil >=2.8.1
+    - aiohttp
     - cf_xarray >=0.3.1
+    - cftime
+    - dask >=2.6
+    - fsspec
+    - netCDF4 >=1.4
+    - numpy >=1.16
+    - python-dateutil >=2.8.1
+    - xarray >=0.15
+    - zarr
+    - zstandard
 
 test:
   imports:
