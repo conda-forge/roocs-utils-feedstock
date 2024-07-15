@@ -17,11 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
-    - pytest-runner
   run:
-    - python >=3.8
+    - python >=3.9
     - aiohttp
     - cf_xarray >=0.3.1
     - cftime
@@ -47,9 +46,11 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
+  license_url: https://github.com/roocs/roocs-utils/blob/master/LICENSE
   summary: A package containing common components for the roocs project
-  doc_url: https://roocs-utils.readthedocs.io/
   dev_url: https://github.com/roocs/roocs-utils/
+  doc_url: https://roocs-utils.readthedocs.io/
+  doc_source_url: https://github.com/roocs/roocs-utils/blob/master/README.rst
 
 extra:
   recipe-maintainers:
