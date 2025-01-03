@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/roocs-utils-fee
 
 Home: https://github.com/roocs/roocs-utils/
 
-Package license: BSD-3-Clause
+Package license: [BSD-3-Clause](https://github.com/roocs/roocs-utils/blob/master/LICENSE)
 
 Summary: A package containing common components for the roocs project
 
